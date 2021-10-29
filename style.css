@@ -1,0 +1,41 @@
+.ns * {
+    padding: 0; margin: 0;
+}
+.ns ul,.ns li {
+    list-style: none;
+}
+.ns .every {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ns .ns-fast-up {
+    animation: up 600ms linear 0s 1 forwards;
+    /* animation: ns-fast-up 300ms linear; */
+}
+.ns .ns-fast-down {
+    animation: down 600ms linear 0s 1 forwards;
+}
+.ns .ns-slow-up {
+    animation: up 1200ms ease-out 0s 1 forwards;
+}
+.ns .ns-slow-down {
+    animation: down 1200ms ease-out 0s 1 forwards;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-90%);
+    }
+}
+@keyframes down {
+    0% {
+        transform: translateY(-90%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
